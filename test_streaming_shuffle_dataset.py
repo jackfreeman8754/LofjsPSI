@@ -7,8 +7,6 @@ import unittest
 
 import torch
 
-from metaseq.data import StreamingShuffleDataset
-
 
 class TensorListDataset(torch.utils.data.Dataset):
     def __init__(self, tensor_list):
@@ -27,10 +25,6 @@ def get_simple_dataset():
             torch.LongTensor([0]),
             torch.LongTensor([1, 2, 3]),
             torch.LongTensor([4]),
-            torch.LongTensor([5]),
-            torch.LongTensor([6, 7, 8]),
-            torch.LongTensor([9, 10]),
-        ]
     )
 
 
